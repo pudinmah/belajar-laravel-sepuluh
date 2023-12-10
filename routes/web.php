@@ -19,7 +19,18 @@ Route::get('/', function () {
 
 // static
 Route::get('/hello',function(){
-    return "Hello World";
+    $hello = ['Hello World', 2=>['Hello Jakarta', 'Hello Karawang','Hello Medan']];
+    // var_dump($hello);
+    // die();
+
+    // dd($hello);
+
+    // dump($hello);
+
+    print_r($hello);
+    die();
+
+    return $hello;
 });
 
 // parameter
